@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Tropicália</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            color: white; /* Para garantir que o texto tenha contraste suficiente */
+        }
+
+        header {
+            background-color: black;
+            color: white;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+        }
+
+        .nav-link {
+            color: white !important; /* Para garantir que os links na navbar fiquem brancos */
+        }
+
+        .nav-link:hover {
+            color: #f1f1f1 !important; /* Efeito de hover para os links */
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+header {
+    background-image: url('caminho/da/sua/imagem.png'); /* Coloque o caminho correto da imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centra a imagem */
+    color: white;
+    padding: 100px 0; /* Ajuste o padding conforme necessário */
+}
+
+<body>
+    <header class=" p-5">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/fgggfvfc.png" class="nav-img " loading="lazy">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="aumentar-fonte" class="btn btn-primary fw-bold">A +</button>
+                <button id="diminuir-fonte" class="btn btn-primary fw-bold">A -</button>
+            </div>
+        </nav>
+    </header>
+
+  <main class="container my-5">
+    <section id="inicio" class="my-5">
+        <div class="inicio-fundo d-flex justify-content-between align-items-center" style="background-image: url('/mnt/data/faf41ee2-63ab-4cd5-99e6-1b545c1e4573.png'); background-size: cover; background-position: center;">
+            <div class="esquerda-conteudo">
+                <h1 class="display-4 fst-italic fw-bold" style="color: black; text-shadow: 2px 2px 5px white;">Boas-vindas a</h1>
+                <a href="#tropicalia" class="btn btn-light btn-lg botao-inicio fw-semibold" style="color: black; text-shadow: 2px 2px 5px white; background-color: white; border: 2px solid black;">Quero conhecer!</a>
+            </div>
+            <img src="img/pradamilanotodasensual.jpg" alt="A imagem apresenta o grupo musical Os mutantes, sao tres pessoas cantando em dois microfones" title="Os mutantes - CC0 Domínio Público / Acervo Arquivo Nacional" class="img-fluid img-inicio">
+        </div>
+    </section>
+</main>
+
+
+
+       <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+    <div class="container d-flex align-items-center">
+        <div class="col-4 d-flex justify-content-center">
+             <img src="img/perfume.jpg"class="rounded-pill" alt="" width="273" height="331" loading="lazy">
+        </div>
+        <div class="col-5">
+            <h2 style="color: white;">O que foi a Prada?</h2>
+            <p class="p-2" style="color: white;">A Prada é uma marca italiana de artigos de luxo, fundada em 1913 em Milão, por Mario Prada e seu irmão. Inicialmente, a empresa focava em artigos de couro, como malas e bolsas de viagem, mas evoluiu para uma grife de moda internacionalmente reconhecida, com coleções de roupas femininas e masculinas, acessórios, perfumes e muito mais.</p>
+        </div>
+    </div>
+</section>
+
+
+      <section id="galeria" style="background-color: white;">
+    <h2 class="text-center pt-5" style="color: black;">Galeria</h2>
+    <div class="container p-3 mt-3 fundo-galeria">
+        <div class="row justify-content-md-center">
+            <div class="col-md-4">
+                <img src="img/trabalhop.jpg" class="img-fluid rounded-5" loading="lazy">
+            </div>
+            <div class="col-md-4">
+                <img src="img/49655007.png class="img-fluid rounded-5" loading="lazy">
+            </div>
+        </div>
+        <div class="row mt-4 justify-content-md-center">
+            <div class="col-md-4">
+                <img src="img/lossy-page1-640px-Gilberto_Gil_nos_anos_1960.tif.jpg" class="img-fluid rounded-5" loading="lazy">
+            </div>
+            <div class="col-md-4">
+                <img src="img/lossy-page1-640px-Caetano_Veloso_no_III_Festival_da_Música_Popular.tif.jpg" class="img-fluid rounded-5" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
